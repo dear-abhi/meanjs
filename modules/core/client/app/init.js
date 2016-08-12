@@ -21,7 +21,7 @@ angular.module(ApplicationConfiguration.applicationModuleName).run(function ($ro
       toState.data.roles.forEach(function (role) {
         if (Authentication.user.roles !== undefined && Authentication.user.roles.indexOf(role) !== -1) {
           allowed = true;
-          return true;
+          return true;          
         }
       });
 
